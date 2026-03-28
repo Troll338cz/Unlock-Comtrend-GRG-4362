@@ -1,0 +1,3 @@
+6617a623f8c2d76ec0ea2c4584ec74ca  ./CTN-1.0.8b16_DTB.img
+b04758df7a8526b4f4596ae23298fe1b  ./CTN-1.0.8b16_kernel.img
+314d22ca4ef571ed1297394026efec59  ./CTN-1.0.8b16_r0.img
