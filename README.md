@@ -27,8 +27,9 @@
 
 ## List of software versions
 ### HW V2.0 
-- CTN-1.0.8b16 (Cetin) 
-- CTN-1.0.8b2 (Cetin)
+- CTN-1.0.8b16[^first] (Cetin) 
+- CTN-1.0.8b2[^first] (Cetin)
+[^first]: Firmware in this repository has been pre-patched to remove ISP passwords and allow shell access.
 
 ## List of partitions
 `cat /proc/mtd`
