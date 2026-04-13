@@ -1,3 +1,7 @@
-6617a623f8c2d76ec0ea2c4584ec74ca  ./CTN-1.0.8b2_DTB.img
-db7f8c32b26ddf6fa6e29b680c23a703  ./CTN-1.0.8b2_kernel.img
-1ea56211987c38cdd9d35cccf1dfa114  ./CTN-1.0.8b2_r1.img
+6617a623f8c2d76ec0ea2c4584ec74ca  CTN-1.0.8b2_DTB.img
+db7f8c32b26ddf6fa6e29b680c23a703  CTN-1.0.8b2_kernel.img
+1ea56211987c38cdd9d35cccf1dfa114  CTN-1.0.8b2_r1.img
+
+3fb30337ce2932a8a4c176b7a919a297  CTN-1.0.8b2_DTB.img.gz
+15156bf40a755523b018f1e7768a39d8  CTN-1.0.8b2_kernel.img.gz
+86525f62bc3069608adcf25d64328083  CTN-1.0.8b2_r1.img.gz
