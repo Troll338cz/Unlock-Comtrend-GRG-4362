@@ -97,7 +97,7 @@ Further patch to `/lib/libmib.so` is required to enable full shell.
 ## Getting the operational status of the ONU
 
 ```sh
-~diag gpon get onu-state~~ Returns error, diag binary might not be functional
+~~diag gpon get onu-state~~ Returns error, diag binary might not be functional
 ```
 
 ## Getting OLT vendor information
@@ -115,15 +115,15 @@ Further patch to `/lib/libmib.so` is required to enable full shell.
 ## Getting/Setting ONU GPON Serial Number
 ```sh
 # flash get GPON_SN
-GPON_SN=CMTD00000000
-# flash set GPON_SN CMTD0A1B2C3D
+GPON_SN=CMTD33221100
+# flash set GPON_SN HWTC0A1B2C3D
 ```
 
 ## Getting/Setting ONU GPON PLOAM password
 
 ```sh
 # flash get GPON_PLOAM_PASSWD
-GPON_PLOAM_PASSWD=AAAAAAAAAA
+GPON_PLOAM_PASSWD=3030303030
 # flash set GPON_PLOAM_PASSWD AAAAAAAAAA
 ```
 
@@ -140,18 +140,18 @@ LOID_PASSWD=user
 ## Getting/Setting OMCI software version (ME 7)
 ```sh
 # flash get OMCI_SW_VER1
-OMCI_SW_VER1=YOURFIRSTSWVER
-# flash set OMCI_SW_VER1 YOURFIRSTSWVER
+OMCI_SW_VER1=CTN-1.0.8b16
+# flash set OMCI_SW_VER1 V3R017C10S100
 # flash get OMCI_SW_VER2
-OMCI_SW_VER2=YOURSECONDSWVER
-# flash set OMCI_SW_VER2 YOURSECONDSWVER
+OMCI_SW_VER2=CTN-1.0.8b2
+# flash set OMCI_SW_VER2 V3R017C10S100
 ```
 
 ## Getting/Setting OMCI hardware version (ME 256)
 ```sh
 # flash get HW_HWVER
 HW_HWVER=V2.0
-# flash set HW_HWVER MYHWVERSION
+# flash set HW_HWVER BF9.A
 ```
 
 ## Getting/Setting OMCI vendor ID (ME 256)
@@ -165,7 +165,7 @@ PON_VENDOR_ID=CMTD
 ```sh
 # flash get GPON_ONU_MODEL
 GPON_ONU_MODEL=GRG-4362
-# flash set GPON_ONU_MODEL DFP-34X-XXX
+# flash set GPON_ONU_MODEL HG8240H
 ```
 
 ## Getting/Setting OMCI OLT Mode and Fake OMCI
@@ -180,7 +180,7 @@ OMCI_OLT_MODE=1
 
 | Value | Note            | OMCI Information                                                                                       |
 | ----- | --------------- | ------------------------------------------------------------------------------------------------------ |
-| 0     | Default Mode    | Stock setting, values cannot be changed                                                           |
+| 0     | Default Mode    | Stock setting, most values cannot be changed                                                           |
 | 1     | Huawei OLT Mode | Huawei                                                                                                 |
 | 2     | ZTE OLT Mode    | ZTE                                                                                                    |
 | 3     | Customized Mode | Custom Software/Hardware Version, OMCC, etc...                                                         |
@@ -212,8 +212,8 @@ ELAN_MAC_ADDR=1c6499a1b1c3
 ## Setting management IP
 ```sh
 # flash get LAN_IP_ADDR
-LAN_IP_ADDR=192.168.2.1
-# flash set LAN_IP_ADDR 192.168.1.1
+LAN_IP_ADDR=192.168.1.1
+# flash set LAN_IP_ADDR 192.168.2.1
 ```
 
 ## Rebooting the ONU
@@ -265,7 +265,7 @@ sw_version1=CTN-1.0.8b2
 
 ## Serial
 ![serial](Pics/UART.jpg)
-The units have unoccupied contacts for serial console in a 2x2 grid, after removing the solder the console is accessible through the ventilation grilles on the bottom cover.
+The units have unpopulated pads for serial console in a 2x2 grid, after removing the solder the console is accessible through the ventilation grilles on the bottom cover.
 
 You can easily communicate with the ONT using a TTL converter (for example the CH341A programmer in TTL mode) by soldering headers and connecting pins to the ONT following the pinout shown in the image above.
 
@@ -279,7 +279,9 @@ TAURUS#
 ## Firmware edit and update
 Device rootfs is stored as simple SquashFS volumes.
 
-Extract image to new folder. Unpack, modification and repacking should be done as root user.
+Unpack, modification and repacking should be done as root user.
+
+Extract image to new folder. 
 ```sh
 unsquashfs -d rootfs_extracted/ CTN-1.0.8b2_rootfs.img 
 ```
