@@ -19,7 +19,7 @@ GPON_SN=KAON01234567
 ```
 
 ### Web UI configuration
-![OMCI](Pics/T-Mobile/omci_menu.jpg)
+![OMCI](Pics/T-Mobile/omci_menu.png)
 ![WAN](Pics/T-Mobile/wan_port.jpg)
 VLAN 2510 is mapped to LAN port, passive bridge doesn't work for me and probably isn't needed.
 After config is done save it from "Management -> Commit/Reboot" just to be sure (mib commit is done automaticly in intervals).
