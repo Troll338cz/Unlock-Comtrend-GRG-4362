@@ -1,0 +1,6 @@
+v0.1.0
+- Fix OMCI equipment ID (ME 257) reset on reboot
+- Fix OMCI hardware version (ME 256) reset on reboot
+- Disable EnableCWMPParameter in default config
+- Add console clear command
+- Set OMCI_OLT_MODE to 3 by in default config
