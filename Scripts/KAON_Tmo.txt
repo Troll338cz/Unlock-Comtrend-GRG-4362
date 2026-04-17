@@ -1,0 +1,64 @@
+# uci show
+easycwmp.@device[0].model_number='PM1191'
+easycwmp.@device[0].serial_number='4B414F4EA1B2C3D4'
+## /\ you should disable that if you keep using KAON, no remote ISP bullshit should be allowed
+
+
+## From cli binary, not fun to try find docs for
+PON mode                 : 5(XGSPON)
+VendorID                 : 0x4b414f4e(KAON)
+VSSN                     : 0xa1b2c3d4
+TO1                      : 80000(unit:125us)
+TO2                      : 8000(unit:125us)
+S/W FSM current event    : NONE
+S/W FSM current state    : O1.1
+S/W FSM previous state   : O1.1
+S/W FSM running state    : O1.1
+H/W FSM current state    : O1.1
+H/W FSM previous state   : O1.1
+Activated counter        : 0
+ONU Dsync state          : hunt 
+Registration ID: 0x00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+
+
+omcc       :0xa1
+ipv4Addr   :0x7f000001
+ipv4Mask   :0xffffff00
+ipv4Gw     :0xffffff00
+ponNum     :1
+geNum      :0
+xgeNum     :1
+iphostNum  :1
+potsNum    :0
+veipNum    :0
+ponSlot    :1
+geSlot     :2
+xgeSlot    :3
+iphostSlot :0
+potsSlot   :0
+veipSlot   :4
+oltType    :COMMON
+ponMacMode :5
+maxQ/Tc    :8
+ispType    :COMMON
+batteryBak :1
+remoteDbg  :0
+powerCsvMd :0
+ipv6Flag   :0
+veipIdp    :0
+todRspTime :35000
+loid       :
+passwd     :
+vendorId   :KAON
+sn         :KAON-a1b2c3d4
+version    :V1.0
+eqId       :PM1191
+mac        :98:39:10:03:13:37
+psk        :0x0000000000000000
+
+
+# from uboot
+image0 version - 2.0.25
+image1 version - 2.0.25_dbg
+
