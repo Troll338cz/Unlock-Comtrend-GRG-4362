@@ -4,3 +4,7 @@ v0.1.0
 - Disable EnableCWMPParameter in default config
 - Add console clear command
 - Set OMCI_OLT_MODE to 3 by in default config
+
+v0.1.1
+- Update dropbear ssh deamon to latest version (Come on Realtek, ssh-rsa ONLY in 2026...)
+- Include extra tools in extras archive
