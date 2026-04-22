@@ -75,6 +75,7 @@ Volumes `ubi_k0` and `ubi_r0` respectively contain kernel and rootfs of the firs
 ## Useful files
 - `/var/config/config.xml` - Contains the user portion of the configuration
 - `/var/config/config_hs.xml` - Contains the "hardware" configuration (which _should not_ be changed)
+- `/var/config/rtkbosa_k.bin` - Laser driver calibration data, per-device unique (backup recomended)
 - `/tmp/omcilog` - OMCI messages logs (must be enabeled, see below)
 
 ## Useful binaries
@@ -97,7 +98,8 @@ Further patch to `/lib/libmib.so` is required to enable full shell.
 ## Getting the operational status of the ONU
 
 ```sh
-~~diag gpon get onu-state~~ Returns error, diag binary might not be functional
+# diag rt_gpon get onu-state
+ONU state: Operation State:Associated(O5.1)
 ```
 
 ## Getting OLT vendor information
