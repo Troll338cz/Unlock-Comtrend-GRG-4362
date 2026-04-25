@@ -1,7 +1,7 @@
 import sys
 
 if len(sys.argv) != 3:
-    print("Encrypt/Decrypt file")
+    print("Encrypt/Decrypt config file")
     print(f"Usage\n{sys.argv[0]} <in file> <out file>")
     sys.exit(0)
 

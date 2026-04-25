@@ -8,3 +8,7 @@ v0.1.0
 v0.1.1
 - Update dropbear ssh deamon to latest version (Come on Realtek, ssh-rsa ONLY in 2026...)
 - Include extra tools in extras archive
+
+v0.1.2
+- Update busybox to v1.36.1 with alot more utils enabled
+- Include busybox patch and build info in extras

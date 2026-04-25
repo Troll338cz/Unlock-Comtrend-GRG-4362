@@ -240,7 +240,7 @@ Port Speed
 
 ```
 
-## Checking the currently active image
+## Checking the currently active image info
 ```sh
 # nv getenv sw_active
 sw_active=0
@@ -255,6 +255,15 @@ sw_version1=CTN-1.0.8b2
 # nv setenv sw_commit 0|1
 # reboot
 ```
+
+## Disable multicast U-Boot update
+```sh
+# nv setenv mupgrade_en 0
+Enabled by default in Realtek U-Boot
+Tool might exist out there but the PHY does not work on this device.
+This speeds up boot time by 10s!
+```
+
 
 # Theardown and other photos
 ![Top](Pics/Case_Top.jpg)
