@@ -59,10 +59,10 @@ flash set ACL_IP_TBL.1.icmp 0
 cat <<EOF > /var/config/run_customized_sdk.sh
 #!/bin/sh
 echo -en '\x1b[41;33m ===> run_customized_sdk.sh executed! <=== \x1b[0m\n'
-sleep 120 && sed -i 's/\/bin\/cli/\/bin\/sh/g' /var/passwd && cat /var/passwd && echo -en '\x1b[42;30m ===> CLI Unlock success! <=== \x1b[0m\n' &
+sleep 60 && sed -i 's/\/bin\/cli/\/bin\/sh/g' /var/passwd && cat /var/passwd && echo -en '\x1b[42;30m ===> CLI Unlock success! <=== \x1b[0m\n' &
 exit 0
 
 EOF
-
+# After boot /etc/passwd will be modified to launch full shell
 
 ```
