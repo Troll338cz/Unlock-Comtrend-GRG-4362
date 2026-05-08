@@ -5,6 +5,9 @@ easycwmp.@device[0].serial_number='4B414F4EA1B2C3D4'
 
 
 ## From cli binary, not fun to try find docs for
+---------------------------------------
+cmd ???
+
 PON mode                 : 5(XGSPON)
 VendorID                 : 0x4b414f4e(KAON)
 VSSN                     : 0xa1b2c3d4
@@ -20,7 +23,12 @@ Activated counter        : 0
 ONU Dsync state          : hunt 
 Registration ID: 0x00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 
-
+---------------------------------------
+telnet 127.0.0.1 2233
+enable
+config
+omci
+show info
 
 omcc       :0xa1
 ipv4Addr   :0x7f000001
@@ -56,9 +64,13 @@ version    :V1.0
 eqId       :PM1191
 mac        :98:39:10:03:13:37
 psk        :0x0000000000000000
+---------------------------------------
+# Info from uboot
 
+fw_printenv
 
-# from uboot
-image0 version - 2.0.25
-image1 version - 2.0.25_dbg
-
+img_version0=2.0.25_eng
+img_version1=2.0.25
+adm_pwd=(OpenSSL hash 66 chars hexa)
+serial_number=KAONA1B2C3
+gpon_passwd=
