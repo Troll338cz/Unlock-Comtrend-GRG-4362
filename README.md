@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------- |
 | Vendor/Brand    | Comtrend                                                                   |
 | Model           | GRG-4362                                                                   |
-| Chipset         | Realtek RTL9615C                                                           |
+| Chipset         | Realtek RTL9615C (Cortina CA8289 variant)                                  |
 | Flash           | SPI NAND 128MiB (Winbond W25N01GVZEIG)                                     |
 | RAM             | DDR4-1866 512MiB                                                           |
 | CPU             | Dualcore AArch64 A55                                                       |
@@ -327,5 +327,5 @@ ubiupdatevol ubi0_6 /tmp/rootfs.img
 - [Anime4000 Flash commands](https://github.com/Anime4000/RTL960x/blob/main/Docs/FLASH_GETSET_INFO.md)
 - [Anime4000 OMCI MIB commands](https://github.com/Anime4000/RTL960x/blob/main/Docs/OMCI_CLI.md)
 - [Anime4000 FW Modding](https://github.com/Anime4000/RTL960x/blob/main/Docs/Modify_Firmware.md)
-
+- [Hacking Cortina XGS-PON devices](https://github.com/YuukiJapanTech/CA8271x)
 

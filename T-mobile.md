@@ -21,11 +21,12 @@ GPON_SN=KAON01234567
 ### Web UI configuration
 ![OMCI](Pics/T-Mobile/omci_menu.png)
 ![WAN](Pics/T-Mobile/wan_port.jpg)
-VLAN 2510 is mapped to LAN port, passive bridge doesn't work[^first] for me and probably isn't needed.
+
+PON VLAN 2510 is mapped to LAN port, passive bridge doesn't work[^first] for me and probably isn't needed.
 
 After config is done save it from "Management -> Commit/Reboot" just to be sure (mib commit is done automaticly in intervals).
 
 Sometimes when running flash/mib set settings didn't save after reboot so verify they are correct before plugging fiber in.
 
-[^first]: Configured on providers OLT, some wom't accept frames from MAC address orher then ONU itself
+[^first]: Configured on providers OLT, some won't accept frames from MAC address other then ONU itself
  
