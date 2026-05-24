@@ -85,7 +85,7 @@ Volumes `ubi_k0` and `ubi_r0` respectively contain kernel and rootfs of the firs
 - `omcicli` - Used to interact with the running OMCI daemon
 - `omci_app` - The OMCI daemon
 - `diag` - Used to run low-level diagnostics commands on the onu
-- `cli` - Comtrend limited cli
+- `cli` - Comtrend limited cli, mentions "x4Wnhq2ReL" as password. No documentation found yet.
 
 # Usage
 
