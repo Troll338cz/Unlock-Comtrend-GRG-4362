@@ -85,13 +85,14 @@ Volumes `ubi_k0` and `ubi_r0` respectively contain kernel and rootfs of the firs
 - `omcicli` - Used to interact with the running OMCI daemon
 - `omci_app` - The OMCI daemon
 - `diag` - Used to run low-level diagnostics commands on the onu
-- `cli` - Comtrend limited cli, mentions "x4Wnhq2ReL" as password. No documentation found yet.
+- `cli` - Comtrend limited cli. No further documentation found yet.
 
 # Usage
 
-## Enable telnet
+## Enable telnet shell
 By default, the firmware prohibits any access from LAN, access rules are stored in `/etc/config_default.xml` file under ACL_IP_TBL table containing zone 0 for LAN and zone 1 for WAN. 
-Further patch to `/lib/libmib.so` is required to enable full shell.
+Further patch to `/lib/libmib.so` is required to enable full shell by default.
+Running command `version --debug x4Wnhq2ReL` enables full shell access for active session.
 
 # GPON ONU status
 
