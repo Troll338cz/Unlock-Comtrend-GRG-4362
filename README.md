@@ -90,8 +90,10 @@ Volumes `ubi_k0` and `ubi_r0` respectively contain kernel and rootfs of the firs
 # Usage
 
 ## Enable telnet shell
-By default, the firmware prohibits any access from LAN, access rules are stored in `/etc/config_default.xml` file under ACL_IP_TBL table containing zone 0 for LAN and zone 1 for WAN. 
+By default, the firmware prohibits any access from LAN, access rules are stored in `/etc/config_default.xml` file under ACL_IP_TBL table index 0 for LAN and 1 for WAN. 
+
 Further patch to `/lib/libmib.so` is required to enable full shell by default.
+
 Running command `version --debug x4Wnhq2ReL` enables full shell access for active session.
 
 # GPON ONU status
